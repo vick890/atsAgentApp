@@ -27,7 +27,8 @@ const Firstscreen = ({ navigation }) => {
           onChangeText={text => setmobileNumber(text)}
           value={mobileNumber}
           keyboardType={'phone-pad'}
-          placeholder='Enter Mobile Number'
+          maxLength={10}
+         placeholder='Enter Mobile Number'
           style={styles.txtInput}
         />
         <TouchableOpacity style={styles.btn}
